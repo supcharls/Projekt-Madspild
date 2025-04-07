@@ -1,0 +1,124 @@
+/* Generel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #7af35f;
+    color: white;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;                      /* flexbox - alt indeni navbar (ul liste af links både med nav left og right) lægges på 1 linje*/
+    justify-content: space-between;     /* fordeling af plads mellem elementerne (så der er maksimal plads mellem begge ul listerne af links) */
+    align-items: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;                      /* tekst links sættes på samme linje */
+}
+
+nav ul li {
+    display: inline;                    /* link tekst står på en linje */
+    margin: 0 30px;                     /* ingen afstand over eller under linktekst, men 30px afstand mellem dem højre og venstre */
+}
+
+nav ul li a {
+    text-decoration: none;              /* understregning for links fjernes */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;        /* tid for overgang når mus holdes over tekst så den skrifter farve */
+}
+
+nav ul li a:hover {
+    color: #7af35f;                     /* farve skift når mus er ovre link tekst */
+}
+
+
+/* Overskrift position samme som boksene nedenunder */
+.titel-header {
+    padding-left: 30px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* Container for faktasektionerne */
+.container {
+    max-width: 2000px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: grid;
+    gap: 20px;
+}
+
+
+
+/* tips boks */
+.tip-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.tip-box:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.tip-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 0;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
+

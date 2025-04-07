@@ -1,0 +1,102 @@
+/* Generel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #7af35f;
+    color: white;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0px;
+    display: flex;                      /* flexbox - alt indeni navbar (ul liste af links både med nav left og right) lægges på 1 linje*/
+    justify-content: space-between;     /* fordeling af plads mellem elementerne*/
+    align-items: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;                      /* tekst links sættes på samme linje */
+}
+
+nav ul li {
+    display: inline;                    /* link tekst står på en linje */
+    margin: 0 30px;                     /* ingen afstand over eller under linktekst, men 30px afstand mellem dem højre og venstre */
+}
+
+nav ul li a {
+    text-decoration: none;              /* understregning for links fjernes */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;        /* tid for overgang når mus holdes over tekst så den skrifter farve */
+}
+
+nav ul li a:hover {
+    color: #7af35f;                     /* overgang farve skifter når mus er ovre link tekst */
+}
+
+
+/* Container for faktasektionerne */
+.container-fakta {
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+    gap: 20px;
+}
+
+
+/* Faktaboks */
+.fact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fefefe;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.fact-box img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
