@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danmark mod madspild</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #7af35f;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1{
+            font-size: 30px;
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;                      /* flexbox - alt indeni navbar (ul liste af links både med nav left og right) lægges på 1 linje*/
+            justify-content: space-between;     /* fordeling af plads mellem elementerne*/
+            align-items: center;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;                      /* tekst links sættes på samme linje */
+        }
+
+        nav ul li {
+            display: inline;                    /* link tekst står på en linje */
+            margin: 0 30px;                     /* ingen afstand over eller under linktekst, men 30px afstand mellem dem højre og venstre */
+        }
+
+        nav ul li a {
+            text-decoration: none;              /* understregning for links fjernes */
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;        /* tid for overgang når mus holdes over tekst så den skrifter farve */
+        }
+
+
+        nav ul li a:hover {
+            color: #575757;                     /* overgangs farve skift når mus er ovre link tekst */
+        }
+
+        /* Container til at centrere indhold horisontalt */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        /* Billeder */
+        .image {
+            width: 1000px;
+            height: 650px;
+            margin-right: 30px;
+        }
+
+
+        /* Infoboks */
+        .info-section {
+            padding: 15px;
+            border: 2px solid #ddd;         /* tilføjelse af ramme */
+            border-radius: 5px;             /* justering af størrelse for rammen*/
+            background-color: #ffffff;
+            text-align: center;
+            max-width: 400px;
+            margin: 3px;
+        }
+
+
+        /* Footer */
+        .foot {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            font-size: 18px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="text-align: center;"  >Danmark mod madspild</h1>
+</header>
+
+
+<nav class="navbar">
+    <ul class="nav-left">
+        <li><a href="index">Forside</a></li>
+        <li><a href ="fakta">Fakta</a></li>
+        <li><a href="tips">Tips og råd</a></li>
+        <li><a href="events">Events</a></li>
+        <li><a href="about">Om os</a></li>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="login">Login</a></li>
+    </ul>
+</nav>
+
+<h2 style="text-align: center;" >Til kamp mod madspild!</h2>
+
+<div class="center-container">
+    <section class="info-section">
+        <h3>Hvad er madspild?</h3>
+        <p>Madspild er, når maden som kunne være blevet spist,</p>
+        <p>bliver smidt ud. Det er et økonomisk problem</p>
+        <p>og en stor belastning for miljøet.</p>
+    </section>
+</div>
+
+
+
+<div class="center-container">
+    <img class="image" src="/madspild7.jpg">
+</div>
+
+<div class="center-container">
+    <div class="info-section">
+        <h3>Hvor meget går til spilde?</h3>
+        <p>Den samlede årlige mængde er oppe på</p>
+        <p>873.000 tons. Det er 59.000 tons mere</p>
+        <p>sammenlignet for år 2018, hvor madspildet</p>
+        <p>lå på 873.000 tons. Derfor er det vigtigt med</p>
+        <p>en ny strategi, der skal mindske madspild.</p>
+    </div>
+</div>
+
+
+
+<div class="center-container">
+    <img class="image" src="/madspild8.png">
+</div>
+
+
+
+<footer class="foot">
+    <p>Danmark mod Madspild</p>
+    <section>
+        <h3>Kontakt os</h3>
+        <p>Email: DKmodMadspild@mail.dk</p>
+        <p>Telefon: +45 12 34 56 78</p>
+    </section>
+</footer>
+
+</body>
+</html>
