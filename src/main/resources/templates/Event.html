@@ -5,46 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
-    <link rel="stylesheet" href="/AboutStylesheet.css">
+    <link rel="stylesheet" href="/EventStylesheet.css">
 </head>
 <body>
-<header>
-    <h1>Kommende Events</h1>
-</header>
 
-<nav class="navbar">
-    <ul>
-        <li><a href ="index">Forside</a></li>
-        <li><a href ="fakta">Fakta</a></li>
-        <li><a href ="tips">Tips og råd</a></li>
-        <li><a href ="event">Events</a></li>
-        <li><a href ="about">Om os</a></li>
-    </ul>
-</nav>
-
-<main>
-    <section>
-        <h2>tilmeld dig et event</h2>
-        <form>
-            <label for="name">Navn:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="event">choose event</label>
-            <select id="event" name="event">
-                <option value="workshop">Madspild workshop</option>
-                <option value="donation">Fødevaresamling</option>
-            </select>
+    <header>
+        <h1>Events</h1>
+    </header>
 
 
+    <nav class="navbar">
+        <ul>
+            <li><a href ="index">Forside</a></li>
+            <li><a href ="fakta">Fakta</a></li>
+            <li><a href ="tips">Tips og råd</a></li>
+            <li><a href ="event">Events</a></li>
+            <li><a href ="about">Om os</a></li>
+        </ul>
+        <ul>
+            <li><a href ="login">Login</a></li>
+        </ul>
+    </nav>
 
-            <button type="submit">tilmeld</button>
-        </form>
-        <p th:if="${message}" th:text="${message}"></p>
-    </section>
-</main>
+
+    <main>
+        <section>
+            <h2>tilmeld dig et event</h2>
+            <form>
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event">choose event</label>
+                <select id="event" name="event">
+                    <option value="workshop">Madspild workshop</option>
+                    <option value="donation">Fødevaresamling</option>
+                </select>
+                <button type="submit">tilmeld</button>
+            </form>
+            <p th:if="${message}" th:text="${message}"></p>
+        </section>
+    </main>
 
 </body>
 </html>
